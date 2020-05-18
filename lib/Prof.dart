@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'detalleProfesor.dart';
 class Prof extends StatelessWidget {
   final List<String> products;
   Prof(this.products);
@@ -7,10 +8,15 @@ class Prof extends StatelessWidget {
     return Card(
       child: Column(
         children: <Widget>[
-          Container(
-           height: 60,
-         child: Text(products[index], style: TextStyle(color: Colors.deepPurple))
-
+          FlatButton(
+           //height: 60,
+          child: Text(products[index], style: TextStyle(color: Colors.deepPurple)),
+          onPressed: ()=>{
+            Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) =>DetalleProf()),
+                    )
+          }
           ),
         ],
       ),

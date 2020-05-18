@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'detalleCurs.dart';
 class Curs extends StatelessWidget {
   final List<String> products;
   Curs(this.products);
@@ -7,10 +8,15 @@ class Curs extends StatelessWidget {
     return Card(
       child: Column(
         children: <Widget>[
-          Container(
-           height: 60,
-         child: Text(products[index], style: TextStyle(color: Colors.deepPurple))
-
+          FlatButton(
+           //height: 60,
+          child: Text(products[index], style: TextStyle(color: Colors.deepPurple)),
+          onPressed: ()=>{
+            Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) =>DetalleCurs()),
+                    )
+          }
           ),
         ],
       ),
