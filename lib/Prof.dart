@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'detalleProfesor.dart';
 class Prof extends StatelessWidget {
   final List<String> products;
+  int i =0;
+  String name = '';
   Prof(this.products);
 
   Widget _buildProductItem(BuildContext context, int index) {
@@ -12,14 +14,15 @@ class Prof extends StatelessWidget {
            //height: 60,
           child: Text(products[index], style: TextStyle(color: Colors.deepPurple)),
           onPressed: ()=>{
-            Navigator.push(
+           Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) =>DetalleProf()),
+                      MaterialPageRoute(builder: (context) =>DetalleProf(),
                     )
+           ),
           }
           ),
         ],
-      ),
+    ),
     );
   }
 

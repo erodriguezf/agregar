@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 
 
+
+
+
+
+
+
+
+
  class DetalleProf extends StatelessWidget {
   @override
    build(BuildContext context) {
@@ -16,7 +24,7 @@ import 'package:flutter/material.dart';
              margin: const EdgeInsets.all(10.0),  // exterior
                     padding: const EdgeInsets.all(10.0),  // interior
                     alignment: Alignment.center,
-                    child: new Text("Bienvenido", style: new TextStyle(fontSize: 20.0)),
+                    child: new Text("Yasmine Swaniawski", style: new TextStyle(fontSize: 20.0)),
           ),
 
           RaisedButton(
